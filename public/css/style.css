@@ -1,0 +1,8 @@
+.mid {
+    overflow: auto;
+    padding-bottom: 150px;
+}
+
+#wrap {
+    min-height: 100%;
+}

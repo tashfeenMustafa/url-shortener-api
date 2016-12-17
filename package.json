@@ -1,0 +1,41 @@
+{
+  "name": "short.ly",
+  "version": "1.0.0",
+  "description": "A NodeJS, Express and MongoD url shortener micro-service API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tashfeenMustafa/url-shortener-api.git"
+  },
+  "keywords": [
+    "shortly",
+    "short.ly",
+    "url",
+    "shortener",
+    "api",
+    "microservice",
+    "shorten",
+    "url",
+    "url",
+    "shorten",
+    "node.js",
+    "express.js",
+    "mongodb",
+    "backend"
+  ],
+  "author": "Tashfeen Mustafa Choudhury",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tashfeenMustafa/url-shortener-api/issues"
+  },
+  "homepage": "https://github.com/tashfeenMustafa/url-shortener-api#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "jquery": "^3.1.1",
+    "mongoose": "^4.7.2"
+  }
+}
