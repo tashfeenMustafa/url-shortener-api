@@ -46,12 +46,10 @@ app.post('/api/shorten', function(request, response)
         if(doc)
         {
             // URL is in the database, already been shortened before
-            console.log('doc: ' + doc)
             shortUrl = config.webhost + base58.decode(doc.longUrl)
             
             // Return shortUrl without creating new entry since it is already present
             // in the database
-            console.log('shortUrl: ' + shortUrl)
             response.send({'short_url': shortUrl, 'long_url': longUrl})
         }
         else
@@ -65,10 +63,8 @@ app.post('/api/shorten', function(request, response)
                 if(err)
                     console.error(err)
                     
-                console.log('newUrl: ' + newUrl)
                 shortUrl = config.webhost + base58.encode(newUrl._id)
                 
-                console.log('shortUrl: ' + shortUrl)
                 response.send({'short_url': shortUrl, 'long_url': newUrl.long_url})    
             })
         }
@@ -89,7 +85,6 @@ app.get('/:encoded_id', function(request, response)
         
         if(doc)
         {
-            console.log('doc in get req: ' + doc)
             // Entry exists, redirect user to original link
             response.redirect('http://' + doc.long_url)
         }

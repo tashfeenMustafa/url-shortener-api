@@ -1,3 +1,25 @@
+input:focus::-webkit-input-placeholder { color:transparent;}
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+canvas {
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:-1;
+}
+
+.fa {
+    font-size: 222%;
+}
 .mid {
     overflow: auto;
     padding-bottom: 150px;
@@ -5,4 +27,58 @@
 
 #wrap {
     min-height: 100%;
+}
+
+.search-bar {
+    margin: 0 31%;
+}
+
+.link-icon {
+    margin: 3% 0 1% 0;
+}
+.navbar-brand {
+    margin-top: 2%;
+    font-size: 130%;
+}
+
+.link-container {
+    margin: 7% 28% 0 28%;
+    padding: 2% 0 3% 0;
+    border: 2px solid #3F88C5;
+    border-radius: 9px;
+}
+
+.link-container i {
+    margin: 0% 0% 0% 3%;
+    font-size: 241%;
+}
+.link-container a {
+    color: #3F88C5;
+}
+.link-container a:hover {
+    text-decoration: none;
+    color: #F1E4E8 !important;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: white;
+}
+.navbar-default {
+    background-color: rgba(255, 255, 255, 0.0);
+    border: none;
+    border-bottom: 1px solid white;
+}
+.navbar-brand {
+    color: white !important;
+}
+.title {
+    color: #FFF;
+}
+.btn-shorten {
+    background-color: #F22B29;
+    color: #FFF;
+}
+
+.copy-content {
+    color: #F1E4E8;
 }

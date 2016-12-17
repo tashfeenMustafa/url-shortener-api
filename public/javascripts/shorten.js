@@ -9,8 +9,9 @@ $(document).ready(function() {
             success: function(data)
             {
                 // display the shortened URL returned by the server
-                var resultHTML = '<a class="result" href="https://' + data.long_url + '" target="_blank">'
-                    + data.short_url + '</a>';
+                var resultHTML = '<div class="link-container"><h4><a class="result" href="https://' + data.long_url + '" target="_blank">'
+                    + data.long_url + '</a></h4><a class="result" href="https://' + data.long_url + '" target="_blank">'
+                    + data.short_url + '</a><i class="material-icons copy-content">&#xE14D;</i></div>';
                 $('#link').html(resultHTML);
                 $('#link').hide().fadeIn('slow');
             }
